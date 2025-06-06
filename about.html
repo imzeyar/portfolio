@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About Zeyar - Senior Software Engineer with extensive experience in enterprise application development." />
+    <title>About - Zeyar</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #212121;
+            color: #e0e0e0;
+        }
+        .navbar {
+            background-color: #333 !important;
+            border-bottom: 1px solid #444 !important;
+        }
+        .navbar-brand, .nav-link {
+            color: #e0e0e0 !important;
+        }
+        .nav-link.active {
+            color: #ffc107 !important; /* Golden color for active link */
+        }
+        .about-section {
+            padding: 40px 0;
+        }
+        .section-title {
+            color: #ffc107; /* Golden color */
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+        }
+         .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: #ffc107; /* Golden color */
+        }
+        .card {
+            background-color: #333;
+            color: #e0e0e0;
+            border: 1px solid #444;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            height: 100%;
+        }
+        .card-title {
+            color: #ffc107; /* Golden color */
+        }
+        .card-text {
+            color: #bdbdbd;
+        }
+        .list-group-item {
+            background-color: #333;
+            color: #e0e0e0;
+            border-color: #444;
+        }
+        .list-group-item strong {
+            color: #ffc107; /* Golden color */
+        }
+        .footer {
+            background-color: #333 !important;
+            border-top: 1px solid #444 !important;
+            color: #e0e0e0 !important;
+        }
+        .footer a {
+            color: #e0e0e0 !important;
+        }
+        .social-links a {
+            color: #e0e0e0 !important;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+         .experience-item {
+            border-left: 2px solid #ffc107; /* Golden timeline indicator */
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+        .experience-item h4 {
+            color: #ffc107; /* Golden color */
+            margin-bottom: 5px;
+        }
+        .experience-item h5 {
+             color: #bdbdbd;
+             margin-bottom: 5px;
+        }
+         .experience-item p {
+             color: #bdbdbd;
+             margin-bottom: 5px;
+         }
+        .experience-item ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        .experience-item ul li {
+            margin-bottom: 5px;
+            color: #bdbdbd;
+        }
+        .profile-img {
+            max-width: 200px; /* Adjust as needed */
+            border-radius: 50%;
+            border: 3px solid #ffc107; /* Golden border */
+        }
+        .about-content h3 {
+            color: #ffc107; /* Golden color */
+            margin-top: 0; /* Adjusted margin */
+            margin-bottom: 15px;
+        }
+        .about-content p {
+            color: #bdbdbd;
+            line-height: 1.6;
+        }
+        .details-card, .education-card, .certifications-card, .skills-card {
+             background-color: #333;
+            color: #e0e0e0;
+            border: 1px solid #444;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+         .details-card h4, .education-card h4, .certifications-card h4, .skills-card h4 {
+            color: #ffc107; /* Golden color */
+            margin-bottom: 15px;
+        }
+        .details-card ul, .education-card ul, .certifications-card ul, .skills-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .details-card ul li, .education-card ul li, .certifications-card ul li, .skills-card ul li {
+            margin-bottom: 10px;
+            color: #bdbdbd;
+        }
+         .skills-card .skill-category h5 {
+            color: #e0e0e0; /* White color for category title */
+            margin-bottom: 10px;
+             font-weight: bold;
+        }
+         .skills-card .skill-item {
+            margin-bottom: 5px;
+         }
+        .skills-card .skill-item i {
+            color: #ffc107; /* Golden checkmark */
+            margin-right: 10px;
+        }
+        .experience-section {
+             padding: 40px 0;
+         }
+        .experience-section h2 {
+            color: #ffc107; /* Golden color */
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+         .company-block {
+            margin-bottom: 30px;
+            background-color: #333;
+            color: #e0e0e0;
+            border: 1px solid #444;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            padding: 20px;
+        }
+        .company-block h4 {
+            color: #ffc107; /* Golden color */
+            margin-bottom: 5px;
+        }
+        .company-block .period, .company-block .position {
+            color: #bdbdbd;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+         .company-block .reason {
+             color: #bdbdbd;
+             font-size: 1rem;
+             margin-bottom: 15px;
+         }
+        .company-block h5 {
+            color: #e0e0e0; /* White color for Projects title */
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .company-block ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        .company-block ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #bdbdbd;
+        }
+         .company-block ul li strong {
+             color: #e0e0e0; /* White color for project name */
+         }
+        .copyright {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Zeyar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+
+            <section class="about-section">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                         <img src="images/profile.jpeg" alt="Zeyar Profile" class="img-fluid profile-img mb-3">
+                         <h2 class="mb-3" style="color: #ffc107;">Zeyar</h2>
+                         <h5 class="text-muted mb-3">Software Engineer</h5>
+                          <div class="social-links mb-3">
+                              <a href="https://github.com/zeyar-min/" target="_blank"><i class="fab fa-github"></i></a>
+                              <a href="https://www.linkedin.com/in/zeyar-920378122/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                          </div>
+                    </div>
+                    <div class="col-md-8 about-content">
+                         <h3>About Me</h3>
+                         <p>Hello! I'm a passionate software developer with experience in various technologies including C#, VB.Net, HTML/DHTML, CSS, JavaScript, jQuery, XML, LINQ, and API development. I specialize in ASP.NET web technologies and Microsoft SQL Server databases. I am seeking better career advancement opportunities and exposure.</p>
+
+                        <div class="details-card">
+                            <h4>Personal Details</h4>
+                            <ul>
+                                <li><strong>Nationality:</strong> Myanmar</li>
+                                <li><strong>Date of Birth:</strong> 30-Oct-1984</li>
+                                <li><strong>Expected Salary:</strong> Negotiable</li>
+                                <li><strong>Notice Period:</strong> Immediate</li>
+                            </ul>
+                        </div>
+
+                         <div class="education-card">
+                             <h4>Education</h4>
+                             <ul>
+                                 <li>B.Sc. (Hons) in Computing and Information Systems</li>
+                                 <li>London Metropolitan University, UK</li>
+                             </ul>
+                             <ul>
+                                  <li>International Advanced Diploma in Computer Studies (IADCS)</li>
+                                 <li>NCC, UK</li>
+                             </ul>
+                             <ul>
+                                  <li>International Diploma in Computer Studies (IDCS)</li>
+                                  <li>NCC, UK</li>
+                             </ul>
+                         </div>
+
+                         <div class="certifications-card">
+                              <h4>Professional Certifications</h4>
+                              <ul>
+                                  <li><i class="fas fa-award"></i> Microsoft Certified AZ-900: Microsoft Azure Fundamentals (May 2021)</li>
+                                   <li><i class="fas fa-award"></i> AWS Certified Cloud Practitioner (CLF-C02) (Jan 2024 - Jan 2027)</li>
+                              </ul>
+                         </div>
+
+                         <div class="skills-card">
+                              <h4>Technical Skills</h4>
+                             <div class="row">
+                                 <div class="col-md-6">
+                                     <div class="skill-category">
+                                         <h5>Programming Languages & Technologies</h5>
+                                         <ul>
+                                             <li class="skill-item"><i class="fas fa-check"></i> C#, VB.Net, Python</li>
+                                             <li class="skill-item"><i class="fas fa-check"></i> HTML/DHTML, CSS, JavaScript, jQuery, XML, LINQ, API</li>
+                                             <li class="skill-item"><i class="fas fa-check"></i> ASP.NET, Web API, Entity Framework</li>
+                                             <li class="skill-item"><i class="fas fa-check"></i> AngularJS</li>
+                                             <li class="skill-item"><i class="fas fa-check"></i> Xamarin</li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                     <div class="skill-category">
+                                         <h5>Databases & Tools</h5>
+                                         <ul>
+                                              <li class="skill-item"><i class="fas fa-check"></i> Microsoft SQL Server</li>
+                                              <li class="skill-item"><i class="fas fa-check"></i> Visual Studio, IIS, Microsoft Windows</li>
+                                              <li class="skill-item"><i class="fas fa-check"></i> Version Control (VSS, SVN, Team Foundation Server (TFS), Git)</li>
+                                              <li class="skill-item"><i class="fas fa-check"></i> Telerik, DevExpress</li>
+                                              <li class="skill-item"><i class="fas fa-check"></i> Selenium, Reporting Services (SSRS), Crystal Reports</li>
+                                              <li class="skill-item"><i class="fas fa-check"></i> Windows Azure Cloud, JIRA</li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 text-center text-md-start">
+                    <p class="copyright">&copy; 2025 - Zeyar Copyright</p>
+                </div>
+                <div class="col-md-6 col-lg-4 text-center col-lg-8 text-lg-end">
+                    <div class="social-links">
+                        <a href="https://github.com/zeyar-min/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/zeyar-920378122/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                         <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>

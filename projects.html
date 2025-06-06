@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Zeyar's Projects - Explore my professional experience and software development projects" />
+    <title>Projects - Zeyar</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #212121;
+            color: #e0e0e0;
+        }
+        .navbar {
+            background-color: #333 !important;
+            border-bottom: 1px solid #444 !important;
+        }
+        .navbar-brand, .nav-link {
+            color: #e0e0e0 !important;
+        }
+        .nav-link.active {
+            color: #ffc107 !important; /* Golden color for active link */
+        }
+        .projects-section {
+            padding: 40px 0;
+        }
+        .section-title {
+            color: #ffc107; /* Golden color for title */
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: #ffc107; /* Golden color for underline */
+        }
+        .company-card {
+            margin-bottom: 30px;
+            background-color: #333;
+            color: #e0e0e0;
+            border: 1px solid #444;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            padding: 20px;
+        }
+        .company-title {
+            color: #ffc107; /* Golden color for company title */
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        .company-period, .company-subtitle, .reason-text {
+            color: #bdbdbd;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .projects-list {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        .projects-list li {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .project-name {
+            font-weight: bold;
+            color: #e0e0e0;
+        }
+        .project-details {
+            color: #bdbdbd;
+        }
+        .footer {
+            background-color: #333 !important;
+            border-top: 1px solid #444 !important;
+            color: #e0e0e0 !important;
+        }
+        .footer a {
+            color: #e0e0e0 !important;
+        }
+        .social-links a {
+            color: #e0e0e0 !important;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Zeyar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            <section class="projects-section">
+                <h1 class="section-title">Professional Experience</h1>
+
+                <div class="timeline"> <!-- Keeping timeline class for potential future use, but removing timeline specific CSS -->
+                    <!-- NTT DATA -->
+                    <div class="company-card">
+                        <h3 class="company-title">NTT DATA Thailand</h3>
+                        <p class="company-period">Oct 2020 - Oct 2023 (Myanmar) – Oct 2023 – Oct 2024 (Thailand)</p>
+                        <p class="company-subtitle">Associate TS Systems Integration Specialist</p>
+                        <p class="reason-text">Reason for Relocation: Seeking better career advancement opportunities and exposure</p>
+                        
+                        <h5 class="mt-4 mb-3">Projects:</h5>
+                        <ul class="projects-list">
+                            <li><span class="project-name">Siam Commercial Bank (SCB):</span> <span class="project-details">Banking system development and maintenance project. Technologies: Python, Microsoft SQL Server 2014. Responsibilities: Coding, deployment, and testing</span></li>
+                            <li><span class="project-name">Keppel Mobile:</span> <span class="project-details">Mobile application development project. Technologies: Visual Studio 2019, MSSQL 2017, Xamarin. Responsibilities: Coding and testing</span></li>
+                            <li><span class="project-name">IBF (The Institute of Banking & Finance Singapore):</span> <span class="project-details">Banking and finance system automation project. Technologies: Visual Studio 2019, MSSQL 2017, Selenium. Responsibilities: Automated testing</span></li>
+                            <li><span class="project-name">IHiS (Integrated Health Information Systems) - Hmail MDM Portal Project:</span> <span class="project-details">Healthcare information system project. Technologies: Visual Studio 2019, MSSQL 2019, Reporting Services. Responsibilities: Coding, deployment, and testing</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Big9 -->
+                    <div class="company-card">
+                         <h3 class="company-title">Big9 Co., Ltd</h3>
+                         <p class="company-period">Nov 2019 - Feb 2020</p>
+                         <p class="company-subtitle">Senior Software Engineer</p>
+                         <p class="reason-text">Reason for Leaving: Seeking better career advancement opportunities and exposure</p>
+                        
+                        <h5 class="mt-4 mb-3">Projects:</h5>
+                         <ul class="projects-list">
+                             <li><span class="project-name">Big9 TV Channel / M-POP Music Challenge TV Show:</span> <span class="project-details">TV show management and payment integration system. Technologies: Visual Studio 2019, Web API, Entity Framework, MSSQL 2017. Role: Developed APIs, integrated third-party APIs (MPT, MyTel Payment), testing, and deployment</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- QSLogics -->
+                    <div class="company-card">
+                         <h3 class="company-title">QSLogics Co., Ltd</h3>
+                         <p class="company-period">June 2017 - Mar 2019</p>
+                         <p class="company-subtitle">Senior Application Engineer</p>
+                         <p class="reason-text">Reason for Leaving: Seeking better career advancement opportunities and exposure</p>
+                        
+                        <h5 class="mt-4 mb-3">Projects:</h5>
+                         <ul class="projects-list">
+                             <li><span class="project-name">Aung Pyi Tan Payroll System:</span> <span class="project-details">Enterprise payroll management system. Technologies: Visual Studio 2015, Web API, Entity Framework, AngularJS (v6), LINQ, Crystal Reports, MSSQL 2017, Git. Role: Project oversight, scope management, .NET API development, Microsoft Development Architecture, full SDLC management</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- I-Access Solutions -->
+                    <div class="company-card">
+                        <h3 class="company-title">I-Access Solutions (Myanmar) Pte Ltd</h3>
+                        <p class="company-period">Sep 2014 - Jan 2016</p>
+                        <p class="company-subtitle">Senior Software Engineer</p>
+                        
+                        <h5 class="mt-4 mb-3">Projects:</h5>
+                        <ul class="projects-list">
+                             <li><span class="project-name">Education and Training e-Administration Management System:</span> <span class="project-details">SaaS solution for the education industry. Implemented for: PSB Academy, Parkway Healthcare, SHATEC, SHIRI, Progreso, SPTI, SPTCC. Technologies: ASP.Net, VB.Net, LINQ, Entity Framework, Azure Cloud, MSSQL 2012, SSRS, DevExpress, TFS, JIRA. Role: New implementations, support, maintenance, documentation, impact analysis, design, development, testing, and deployment</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- iCitySoft -->
+                    <div class="company-card">
+                        <h3 class="company-title">iCitySoft Co., Ltd</h3>
+                        <p class="company-period">Jan 2013 - June 2014</p>
+                        <p class="company-subtitle">Software Developer</p>
+                        
+                        <h5 class="mt-4 mb-3">Projects:</h5>
+                        <ul class="projects-list">
+                             <li><span class="project-name">Chemical Machines Data Management System:</span> <span class="project-details">Synchronize PDA device data with the server (Singapore Project)</span></li>
+                             <li><span class="project-name">Clients Database Management System (CDBMS):</span> <span class="project-details">Manage client company auditing data (Singapore Project)</span></li>
+                             <li><span class="project-name">Lucky Draw Management System:</span> <span class="project-details">Generate lucky draw numbers and manage records (Singapore Project)</span></li>
+                             <li><span class="project-name">Aye Ma Plastic Material POS / Nay Lin Aung Gravure Printing POS:</span> <span class="project-details">Manage purchase, sales, inventory, invoicing, and daily stock movements</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Key Holders -->
+                    <div class="company-card">
+                        <h3 class="company-title">Key Holders Software Services Co., Ltd</h3>
+                        <p class="company-period">Jul 2009 - Dec 2012</p>
+                        <p class="company-subtitle">Software Developer</p>
+                        
+                        <h5 class="mt-4 mb-3">Projects:</h5>
+                        <ul class="projects-list">
+                             <li><span class="project-name">e-Customs Phase-2 Project:</span> <span class="project-details">Digitalize manual customs processing at airports and ports (Government Project)</span></li>
+                             <li><span class="project-name">Simple Accounting System:</span> <span class="project-details">Automate accounting, sales, and warehouse management</span></li>
+                             <li><span class="project-name">National Parliament ICT Cable Tracking System:</span> <span class="project-details">Manage ICT cable networks (Telephone, PABX, CATV, Fiber)</span></li>
+                             <li><span class="project-name">Credit/Debit and Stock Control System:</span> <span class="project-details">Profit management, inventory tracking, reporting, and invoicing (Shwe San Eain Hardware Materials)</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 text-center text-md-start">
+                    <p class="copyright">&copy; 2025 - Zeyar Copyright</p>
+                </div>
+                <div class="col-md-6 col-lg-4 text-center col-lg-8 text-lg-end">
+                    <div class="social-links">
+                        <a href="https://github.com/zeyar-min/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/zeyar-920378122/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                         <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html> 

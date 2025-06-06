@@ -1,0 +1,330 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a1a1a; /* Dark background */
+  color: #e0e0e0; /* Light grey text for contrast */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #b8860b; /* Golden color for headings */
+}
+
+.container {
+    max-width: 1100px;
+}
+
+/* Navigation Bar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.3); /* Add shadow to navbar */
+    background-color: #0d0d0d !important; /* Very dark background */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #e0e0e0 !important; /* Light text for links, ensure visibility */
+    transition: color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #b8860b !important; /* Golden hover effect */
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #b8860b !important; /* Golden brand color */
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #0d0d0d 0%, #333333 100%); /* Dark gradient background */
+    color: #e0e0e0;
+    padding: 120px 0;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.hero-section h1 {
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #b8860b; /* Golden heading color */
+    font-size: 3.5rem;
+}
+
+.hero-section p.lead {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    color: #e0e0e0;
+}
+
+.hero-buttons a {
+    margin: 10px;
+}
+
+.hero-buttons .btn-primary {
+    background-color: #b8860b; /* Golden button */
+    color: #1a1a1a; /* Dark text on button */
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: #daaa00; /* Brighter golden on hover */
+}
+
+.hero-buttons .btn-outline-primary {
+    color: #b8860b; /* Golden outline text */
+    border-color: #b8860b; /* Golden border */
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.hero-buttons .btn-outline-primary:hover {
+    background-color: #b8860b; /* Golden background on hover */
+    color: #1a1a1a; /* Dark text on hover */
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Darker shadow */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #2a2a2a; /* Slightly lighter dark background for cards */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Larger shadow on hover */
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: #b8860b; /* Golden title color */
+}
+
+.card-text {
+    color: #e0e0e0; /* Light text */
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    margin-top: 50px;
+    padding: 30px 0;
+    background-color: #0d0d0d; /* Very dark background */
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.footer a {
+    color: #daaa00; /* Brighter golden link color for visibility */
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffffff; /* White or very light color on hover for contrast */
+}
+
+.footer .container .row > div {
+    text-align: center; /* Keep center for general columns */
+}
+
+.footer .container .row > div:first-child {
+    text-align: left; /* Align the first column (copyright) to the left */
+}
+
+.footer .social-links a {
+    font-size: 1.3rem; /* Reduced font size */
+    margin: 0 10px;
+    color: white; /* Set social links to white */
+}
+
+.footer .social-links a:hover {
+    color: #ffffff; /* Slightly lighter white on hover */
+}
+
+.footer .container .row > div:last-child {
+    margin-bottom: 0;
+}
+
+.footer .container .row > div:last-child .social-links {
+    /* Removed margin-top */
+}
+
+/* Contact Page */
+.contact-info i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3498db; /* Blue icon color from image */
+    background-color: #2a2a2a; /* Dark background for icons */
+    border-radius: 50%;
+    margin-right: 15px !important;
+}
+
+.contact-info h5 {
+    margin-bottom: 5px;
+    color: #b8860b; /* Golden heading color */
+}
+
+.contact-info p {
+    margin-bottom: 0;
+    color: #e0e0e0; /* Light text */
+}
+
+.social-links a {
+    transition: color 0.3s ease;
+    color: #ffc107; /* Golden color for social links from image */
+}
+
+.social-links a:hover {
+    color: #e0a800; /* Darker golden on hover */
+}
+
+.contact-form .card-body {
+    background-color: #2a2a2a; /* Dark background for form */
+    border-radius: 8px;
+}
+
+.contact-form .form-label {
+    color: #e0e0e0; /* Light label text */
+}
+
+.contact-form .form-control {
+    background-color: #333333; /* Darker input background */
+    color: #e0e0e0; /* Light input text */
+    border: 1px solid #555; /* Darker border */
+}
+
+.contact-form .form-control:focus {
+     border-color: #b8860b; /* Golden border on focus */
+     box-shadow: 0 0 0 0.25rem rgba(184, 134, 11, 0.25); /* Golden shadow on focus */
+}
+
+.contact-form .btn-primary {
+     background-color: #b8860b; /* Golden button */
+     color: #1a1a1a; /* Dark text */
+     border: none;
+     transition: all 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #daaa00; /* Brighter golden on hover */
+}
+
+/* Projects Page */
+.badge {
+    font-size: 0.85rem;
+    padding: 0.6em 1.2em;
+    border-radius: 20px;
+    background-color: #b8860b !important; /* Golden badge */
+    color: #1a1a1a !important; /* Dark text on badge */
+}
+
+/* About Page */
+.profile-image {
+    border: 5px solid #b8860b; /* Golden border color */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 80px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+    
+    .card-img-top {
+        height: 180px;
+    }
+    
+    .footer .container .row > div {
+       text-align: center !important;
+       margin-bottom: 15px;
+    }
+    .footer .container .row > div:last-child {
+       margin-bottom: 0;
+    }
+    .footer .social-links {
+        margin-top: 15px;
+    }
+    
+    .contact-info i {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section, .card, .contact-info,
+.footer .social-links {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Specific styles for the black and gold theme */
+.text-muted {
+    color: #e0e0e0 !important; /* Ensure muted text is visible on dark background */
+}
+
+.about-section .award-badge {
+    color: #FFD700 !important; /* Changed to yellow color with !important */
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.about-section .certifications-card i {
+    color: #ffc107 !important; /* Changed to golden color */
+    font-size: 1.2rem;
+    margin-right: 10px; /* Adjusted margin to match image spacing */
+}

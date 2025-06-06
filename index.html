@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Zeyar's personal website showcasing skills, projects, and contact information." />
+    <meta name="keywords" content="Zeyar, Software Engineer, Web Development, Portfolio, Projects, Contact" />
+    <meta property="og:title" content="Zeyar - Software Engineer" />
+    <meta property="og:description" content="Zeyar's personal website showcasing skills, projects, and contact information." />
+    <meta property="og:image" content="images/og-image.jpg" />
+    <meta property="og:url" content="#" />
+    <title>Home - Zeyar</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #212121;
+            color: #e0e0e0;
+        }
+        .navbar {
+            background-color: #333 !important;
+            border-bottom: 1px solid #444 !important;
+        }
+        .navbar-brand, .nav-link {
+            color: #e0e0e0 !important;
+        }
+        .nav-link.active {
+            color: #ffc107 !important; /* Golden color for active link */
+        }
+        .hero-section {
+            background-color: #212121;
+            color: #e0e0e0;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero-title {
+            color: #ffc107; /* Golden color */
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #bdbdbd;
+        }
+        .btn-primary {
+            background-color: #ffc107;
+            border-color: #ffc107;
+            color: #212121;
+            padding: 10px 30px;
+            font-size: 1.2rem;
+        }
+        .btn-primary:hover {
+            background-color: #e0a800;
+            border-color: #d39e00;
+        }
+         .btn-outline-primary {
+            color: #ffc107;
+            border-color: #ffc107;
+            padding: 10px 30px;
+            font-size: 1.2rem;
+        }
+        .btn-outline-primary:hover {
+            background-color: #ffc107;
+            color: #212121;
+        }
+        .projects-section, .services-section {
+            padding: 60px 0;
+        }
+        .section-title {
+            color: #ffc107; /* Golden color */
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+        }
+        .card {
+            background-color: #333;
+            color: #e0e0e0;
+            border: 1px solid #444;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            height: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+        .card-title {
+            color: #ffc107; /* Golden color */
+            font-size: 1.3rem;
+            margin-top: 15px;
+        }
+        .card-text {
+            color: #bdbdbd;
+            font-size: 1rem;
+        }
+        .card i {
+            font-size: 3rem;
+            color: #ffc107; /* Golden color for icons */
+            margin-bottom: 15px;
+        }
+        .company-card {
+            margin-bottom: 30px;
+            background-color: #333;
+            color: #e0e0e0;
+            border: 1px solid #444;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            padding: 20px;
+        }
+        .company-title {
+            color: #ffc107; /* Golden color for company title */
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        .company-period, .company-subtitle, .reason-text {
+            color: #bdbdbd;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .projects-list {
+            margin-top: 20px;
+            padding-left: 20px;
+            list-style: disc;
+        }
+        .projects-list li {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            color: #bdbdbd; /* Added color */
+        }
+        .projects-list li strong {
+             color: #e0e0e0; /* White color for project name */
+         }
+        .project-name {
+            font-weight: bold;
+            color: #e0e0e0;
+        }
+        .project-details {
+            color: #bdbdbd;
+        }
+        .footer {
+            background-color: #333 !important;
+            border-top: 1px solid #444 !important;
+            color: #e0e0e0 !important;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #e0e0e0 !important;
+            text-decoration: none;
+        }
+        .footer a:hover {
+             color: #ffc107 !important;
+        }
+         .social-links a {
+            color: #e0e0e0 !important;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+             color: #ffc107 !important;
+        }
+        .copyright {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Zeyar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container">
+                    <h1 class="hero-title">Welcome to My Portfolio</h1>
+                    <p class="hero-subtitle">I'm a passionate developer creating amazing digital experiences</p>
+                    <a href="projects.html" class="btn btn-primary btn-lg me-2">View My Work</a>
+                    <a href="contact.html" class="btn btn-outline-primary btn-lg">Contact Me</a>
+                </div>
+            </section>
+
+            <!-- My Services Section -->
+            <section class="services-section">
+                <h2 class="section-title">My Services</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <i class="fas fa-laptop-code"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Web Development</h5>
+                                <p class="card-text">Creating responsive and modern web applications using the latest technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                           <i class="fas fa-mobile-alt"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Mobile Development</h5>
+                                <p class="card-text">Building cross-platform mobile applications that deliver great user experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <i class="fas fa-server"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Backend Development</h5>
+                                <p class="card-text">Designing and implementing robust backend systems and APIs.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <i class="fas fa-database"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Database Design & Management</h5>
+                                <p class="card-text">Expertise in designing, implementing, and managing various database systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <i class="fas fa-cloud"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Cloud Services</h5>
+                                <p class="card-text">Working with cloud platforms like Azure and AWS for deployment and services.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <i class="fas fa-wrench"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Maintenance & Support</h5>
+                                <p class="card-text">Providing ongoing maintenance, support, and optimization for applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 text-center text-md-start">
+                    <p class="copyright">&copy; 2025 - Zeyar Copyright</p>
+                </div>
+                <div class="col-md-6 col-lg-4 text-center col-lg-8 text-lg-end">
+                    <div class="social-links">
+                        <a href="https://github.com/zeyar-min/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/zeyar-920378122/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                         <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>
